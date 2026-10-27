@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*contenedor principal del header*/
+
+header {
+  display: flex;  /*Activa el flex box*/
+  align-items: center;
+  justify-content: space-between; /*distribuye el logo a la izqquierda, el nav al centro, y el boton a la derecha*/
+  width: 100%;
+  height: 100px;
+  background-color: rgb(96, 175, 62);
+  box-sizing:border-box;
+  border: 1px black solid;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding: 2px 2px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+.registro2 {
+    display: none;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;  
+    flex-direction: column;
+    padding: 10px;
+}
+
+.IniSesion2 {
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+    margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.IniSesion2:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.IniSesion2:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.nav {
+    display: flex;
+    padding: 5px 5px;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnSearch {
+    width: 600px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;     /* Alinea los elementos verticalmente */
+    gap: 10px;               /* Controla la separación entre el bloque de iconos y el de textos */
+    justify-content:left;   
+    border-radius: 1cap;
+    border: 0;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnSearch:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.btnSearch:active {
+    transform: translateY(0) scale(0.98);
+}
+
+
+.options {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;     /* Alinea los elementos verticalmente */
+    gap: 10px;               /* Controla la separación entre el bloque de iconos y el de textos */
+    justify-content: space-between;
+    width: 500px;
+}
+
+.img_links {
+    font-weight: bold;
+    padding: 2px 2px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.img_links img {
+    margin: 0 3px;
+}
+
+.links {
+    display: flex;
+    padding: 3px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(6, 78, 59);
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.links a:hover {
+    color: rgb(4, 120, 87);
+}
+
+.registro {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;  
+    flex-direction: column;
+    padding: 10px;
+}
+
+.IniSesion {
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+    margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.IniSesion:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.IniSesion:active {
+    transform: translateY(0) scale(0.98);
+}
+
+main {
+    background-color: rgb(214, 253, 183);
+    width: 100%;
+    height: 1250px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(Imagenes/Fondo.png);
+    background-size: contain; /* Ajusta la imagen al ancho de la pantalla sin deformar */
+    background-repeat: no-repeat; /* Evita que se duplique */
+    background-position: bottom center; /* La fija arriba de todo */
+}
+
+.main-img {
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+    background-image: url(Imagenes/Paisaje.png);
+    background-size: cover;
+    display: flex;
+    justify-content: left; 
+}
+
+.presentation {
+    margin: 10px 100px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.presentation p {
+  color: black; 
+  -webkit-text-stroke: 1px white;
+}
+
+.SaberMas {
+    margin: 7px;
+    width: 300px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 1.5cap;
+    border: 3px black solid;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.SaberMas:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.SaberMas:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.intermedio {
+    width: fit-content;
+    height: fit-content;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.Botones {
+   width: 90%;
+   height: 740px;
+   margin: 10px;
+   display: grid;
+   grid-template-columns: repeat(3, 300px); /* Crea exactamente 3 columnas del mismo ancho */
+   gap: 40px;                            /* Espaciado de 10px entre cada botón */
+   justify-content: center;
+}
+
+.Botones button {
+    font-size: 50px;
+    height: 300px;
+    width: 300px;
+    margin: 20px 0px;
+    border-radius: 1.5cap;
+    border: 3px black solid;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Botones button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.Botones button:active {
+    transform: translateY(0) scale(0.98);
+}
+
+footer {
+  display: flex;  /*Activa el flex box*/
+  align-items: center;
+  justify-content: space-between; /*distribuye el logo a la izqquierda, el nav al centro, y el boton a la derecha*/
+  width: 100%;
+  height: 50px;
+  background-color: rgb(96, 175, 62);
+  box-sizing:border-box;
+  /*Esto aun no lo enseña el profe*/
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  /**/
+}
+
+.terms {
+    display: flex;
+    gap: 20px;
+    padding: 5px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms a {
+    text-decoration: none;
+    color: rgb(6, 78, 59);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.terms a:hover {
+    color: rgb(4, 120, 87);
+}
+
+/*Para pantallas pequeñas, colapsar los elementos en columna*/
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .registro2 {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap; /*Permite que los enlaces salten de linea*/
+        justify-content: center;
+    }
+
+    .btnSearch {
+        width: 550px;
+    }
+
+    .registro {
+        display: none;
+    }
+
+    main {
+        height: 2600px;
+    }
+
+    .main-img {
+        border-radius: 100px;
+    }
+
+    .Botones {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Botones button {
+        margin: 10px 0px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .terms {
+        flex-wrap: wrap; /*Permite que los enlaces salten de linea*/
+        justify-content: center; 
+    }
+}
